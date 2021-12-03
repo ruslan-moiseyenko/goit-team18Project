@@ -1,4 +1,37 @@
-.test {
-  color: aquamarine;
-  background-color: blue;
+.advantages {
+  width: 320px;
+  height: 600px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #fff5f6;
+}
+.advantages__title {
+  font-family: titan one;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.145;
+  letter-spacing: 0.4rem;
+
+  color: rgba(212, 20, 67, 1);
+  padding: 0;
+  margin: 0;
+}
+.advantages__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.advantages__box {
+  width: 230px;
+  height: 156px;
+}
+
+.advantages__text {
+  font-family: DM sans;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+  padding: 0;
+  margin: 0;
 }
