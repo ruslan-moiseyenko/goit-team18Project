@@ -3,6 +3,7 @@
 }
 
 .menu-container {
+  text-align: left;
 }
 
 .open-menu-button,
@@ -26,8 +27,17 @@
 
 .hero__title {
   font-family: Titan One;
+  font-weight: 400;
   font-size: 26px;
   line-height: 1.15;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  text-align: left;
+  color: $primary-white-color;
+
+  & span {
+    font-size: 48px;
+    line-height: 0.96;
+    color: $accent-color;
+  }
 }
