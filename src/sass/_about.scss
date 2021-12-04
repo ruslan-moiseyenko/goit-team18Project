@@ -1,0 +1,115 @@
+.about {
+  background-color: $advantages-bg-color;
+  background-repeat: no-repeat;
+  background-position-y: calc(100% - 61px);
+  background-position-x: center;
+  padding-top: 125px;
+  min-width: 320px;
+
+  @media screen and (max-width: 767px) {
+    background-image: url('../images/bg-about-mobile.png');
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/bg-about-mobile@2x.png');
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url('../images/bg-about-desktop.png');
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/bg-about-desktop@2x.png');
+    }
+  }
+}
+
+.about__container {
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 480px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.about__label {
+  font-family: Titan One;
+  font-size: 18px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  text-align: center;
+  color: $secondary-title-color;
+  margin-bottom: 15px;
+}
+
+.about__title {
+  font-family: Titan One;
+  font-size: 34px;
+  width: 200px;
+
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.15;
+  font-weight: 400;
+
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $accent-color;
+}
+
+.about__wrapper {
+  margin-top: 46px;
+}
+
+.about__img {
+  margin: 0 auto 46px auto;
+}
+
+.about__text-wrapper {
+  padding-left: 30px;
+  padding-right: 40px;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.about__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  color: $primary-black-color;
+}
+
+.about__text--grey {
+  margin-top: 35px;
+  margin-bottom: 20px;
+  color: $primary-text-color;
+}
+
+.about__text--end {
+  display: block;
+  margin-top: 19px;
+}
+
+.about__button {
+  font-size: 14px;
+  line-height: 1.29;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $accent-color;
+
+  width: 176px;
+  height: 44px;
+  background: $primary-white-color;
+  border-radius: 22px;
+  border: none;
+
+  &:hover {
+    background: #ecebeb;
+  }
+}
+
+.about__icon {
+  margin-left: 14px;
+}
