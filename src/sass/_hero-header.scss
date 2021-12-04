@@ -1,3 +1,33 @@
 .hero-header-container {
   background-color: $header-bg-color;
 }
+
+.menu-container {
+}
+
+.open-menu-button,
+.close-menu-button {
+  background-color: transparent;
+  border: none;
+}
+
+.site-nav__link {
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  text-decoration: none;
+  color: $primary-white-color;
+
+  &--active {
+    color: $accent-color;
+  }
+}
+
+.hero__title {
+  font-family: Titan One;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}

@@ -1,28 +1,50 @@
 <div class="hero-header-container">
   <div class="container">
     <header class="page-header">
-      <img src="" alt="logo" />
+      <picture>
+        <source
+          srcset="./images/logo-desktop.png 1x, ./images/logo-desktop@2x.png 2x"
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="./images/logo-tablet.png 1x, ./images/logo-tablet@2x.png 2x"
+          media="(min-width: 768px)"
+        />
+        <source srcset="./images/logo.png 1x, ./images/logo@2x.png 2x" />
+        <img class="logo" src="./images/logo.png" alt="logo" />
+      </picture>
+
+      <button
+        type="button"
+        class="close-menu-button"
+        aria-controls="menu-container"
+        open-menu-button
+      >
+        <svg width="14" height="14" aria-label="Open mobile menu" class="close-menu-button__icon">
+          <use href="./images/sprite.svg#icon-burger"></use>
+        </svg>
+      </button>
+
       <div class="menu-container">
         <button
           type="button"
           class="close-menu-button"
-          aria-expanded="false"
           aria-controls="menu-container"
           close-menu-button
         >
           <svg
-            width="40"
-            height="40"
-            aria-label="Closing mobile menu"
+            width="20"
+            height="12"
+            aria-label="Close mobile menu"
             class="close-menu-button__icon"
           >
-            <use href=""></use>
+            <use href="./images/sprite.svg#icon-close"></use>
           </svg>
         </button>
         <button type="button" class="buy-button">Buy now</button>
         <ul class="site-nav list">
           <li class="site-nav__item">
-            <a href="#home" class="site-nav__link">Home</a>
+            <a href="#home" class="site-nav__link site-nav__link--active">Home</a>
           </li>
           <li class="site-nav__item">
             <a href="#feedbacks" class="site-nav__link">About us</a>
