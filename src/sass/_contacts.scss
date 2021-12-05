@@ -5,10 +5,10 @@
     $advantages-bg-color 170px
   );
   min-width: 320px;
+  padding-top: 86px;
 }
 
 .contacts-container {
-  padding-top: 86px;
   margin: auto;
 }
 
@@ -51,19 +51,17 @@
 }
 
 .contacts__category {
+  display: flex;
   height: 16px;
   margin-right: auto;
   margin-bottom: 25px;
 
   height: 16px;
-
   border-radius: 4px;
   color: $primary-white-color;
   background-color: $product2-bg-color;
 
   align-items: center;
-  text-align: left;
-  justify-content: center;
 
   &--foodtruck {
     background-color: $product3-bg-color;
@@ -77,6 +75,10 @@
 
 .contacts__category-text {
   margin: 0;
+  display: flex;
+  box-sizing: content-box;
+  justify-content: center;
+  align-self: center;
 
   font-family: DM Sans;
   font-style: normal;
@@ -84,8 +86,9 @@
   font-size: 12px;
 
   text-transform: uppercase;
-  align-items: center;
-  text-align: center;
+  justify-content: center;
+  justify-self: center;
+  margin: auto;
   letter-spacing: 0.04em;
 }
 
@@ -185,19 +188,29 @@
   line-height: 1.31;
   align-items: center;
   text-align: center;
+}
 
-  &--location {
-    color: $primary-white-color;
-    background-color: $accent-color;
-    margin-bottom: 10px;
-    fill: $primary-white-color;
-    stroke: $primary-white-color;
+.contacts__button--location {
+  color: $primary-white-color;
+  background-color: $accent-color;
+  margin-bottom: 10px;
+  fill: $primary-white-color;
+  stroke: $primary-white-color;
+
+  &:hover,
+  &:focus {
+    background-color: #b81941;
   }
+}
 
-  &--franchise {
-    color: $accent-color;
-    background-color: $primary-white-color;
-    fill: $accent-color;
+.contacts__button--franchise {
+  color: $accent-color;
+  background-color: $primary-white-color;
+  fill: $accent-color;
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
   }
 }
 
