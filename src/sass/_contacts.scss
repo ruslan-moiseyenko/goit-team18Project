@@ -146,4 +146,36 @@
 
 .contacts__button {
   display: block;
+  margin: 0 auto;
+  width: 161px;
+  height: 44px;
+  border: none;
+  border-radius: 22px;
+
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.31;
+  align-items: center;
+  text-align: center;
+
+  &--location {
+    color: $primary-white-color;
+    background-color: $accent-color;
+    margin-bottom: 10px;
+    fill: $primary-white-color;
+  }
+
+  &--franchise {
+    color: $accent-color;
+    background-color: $primary-white-color;
+    fill: $accent-color;
+  }
+}
+
+.contacts__button-icon {
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
 }
