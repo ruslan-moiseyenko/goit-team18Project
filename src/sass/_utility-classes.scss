@@ -1,6 +1,7 @@
 body {
   background-color: $primary-bg-color;
   color: $primary-text-color;
+  font-family: DM sans, sans-serif;
 }
 
 button {
@@ -10,33 +11,18 @@ a {
   color: inherit;
 }
 .container {
-  padding: 0 15px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 0;
-  text-align: center;
-
-  width: 480px;
-
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-  }
-}
-
-.container {
   padding: 0 20px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
-
+  min-width: 320px;
   width: 100%;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
 
   @media screen and (min-width: 768px) {
     width: 768px;
