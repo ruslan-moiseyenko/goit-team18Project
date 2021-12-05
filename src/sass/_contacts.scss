@@ -1,38 +1,61 @@
 .contacts {
-  background-color: $advantages-bg-color;
+  background-image: linear-gradient(
+    to bottom,
+    $primary-white-color 170px,
+    $advantages-bg-color 170px
+  );
+  min-width: 320px;
 }
 
 .contacts-container {
-  padding-top: 170px;
+  padding-top: 86px;
+  margin: auto;
 }
 
 .contacts__box {
   padding: 43px 21px 43px 20px;
-  max-width: 220px;
   border-radius: 24px;
   margin: 0 auto;
+  width: 100%;
 
   background-color: $primary-white-color;
 
   box-shadow: 0px 8px 30px 0px #d414431a;
+
+  @media screen and (min-width: 320px) {
+    max-width: 220px;
+  }
 }
 
 .contacts__list {
   display: flex;
   flex-wrap: wrap;
   margin-top: -20px;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
 }
 
 .contacts__item {
   flex-basis: calc(100% / 1);
   margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 50px;
+
+  @media screen and (min-width: 320px) {
+    padding: 0 -50px;
+  }
 }
 
 .contacts__category {
   height: 16px;
-  margin: 0 auto;
+  margin-right: auto;
   margin-bottom: 25px;
-  display: inline-flex;
+
+  height: 16px;
 
   border-radius: 4px;
   color: $primary-white-color;
@@ -44,6 +67,11 @@
 
   &--foodtruck {
     background-color: $product3-bg-color;
+    width: 130px;
+  }
+
+  &--cafe {
+    width: 80px;
   }
 }
 
@@ -56,9 +84,6 @@
   font-size: 12px;
 
   text-transform: uppercase;
-  padding-left: 16px;
-  padding-right: 16px;
-
   align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
@@ -165,6 +190,7 @@
     background-color: $accent-color;
     margin-bottom: 10px;
     fill: $primary-white-color;
+    stroke: $primary-white-color;
   }
 
   &--franchise {
