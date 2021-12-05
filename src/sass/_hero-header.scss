@@ -16,6 +16,7 @@ img {
   background-color: $header-bg-color;
   position: relative;
   overflow: hidden;
+  min-width: 320px;
 }
 
 .page-header {
