@@ -7,20 +7,20 @@
   height: 100%;
 
   &__logo {
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 39px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    width: 200px;
+    height: 76px;
+    color: $accent-color;
     @media screen and (max-width: 767px) {
       padding-top: 17px;
       padding-bottom: 43px;
-      color: $accent-color;
-      width: 200px;
-      height: 76px;
-
-      font-family: Titan One;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 34px;
-      line-height: 39px;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
     }
   }
   &__social-icon {
@@ -29,32 +29,35 @@
 }
 .footer__text {
   color: $secondary-title-color;
-  @media screen and (max-witdh: 767px) {
-    //padding-left: 22px;
-    margin-top: 131px;
-    width: 232px;
-    height: 42px;
-    text-align: left;
-    font-family: Titan One;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 21px;
-    text-transform: uppercase;
-  }
+  //   @media screen and (max-witdh: 767px) {
+  //padding-left: 22px;
+  padding-top: 131px;
+  padding-bottom: 17px;
+  width: 232px;
+  height: 42px;
+  text-align: left;
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  //   }
 }
 .footer__social {
   display: flex;
   margin-top: 43px;
   fill: $social-color;
-  //align-items: block;
   padding-left: 147px;
-  //padding-right: 20.53px;
+  z-index: 1;
   &__item {
     display: flex;
-    @media screen and (max-witdh: 767px) {
+    @media screen and (max-witdh: 480px) {
+      position: relative;
       padding-bottom: 46px;
-      padding-left: 147px;
+      padding-left: auto;
+      display: block;
+      padding-right: 20.53px;
     }
     &:not(:last-child) {
       margin-right: 28.24px;
@@ -65,13 +68,12 @@
 .footer__contacts {
   &__link {
     color: #000000;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 480px) {
+      padding-top: 46px;
       width: 230px;
       height: 22px;
-      //   left: 70px;
-      //   top: 6962px;
 
-      font-family: 'DM Sans' sans-serif;
+      font-family: DM Sans;
       font-style: normal;
       font-weight: bold;
       font-size: 12px;
@@ -80,10 +82,6 @@
       text-align: right;
       width: 320px;
       height: 0px;
-      //left: 0px;
-      //top: 7027px;
-
-      //border: 1px solid #e1e1e1;
     }
   }
   .footer__contacts__link::after {
@@ -95,12 +93,16 @@
     position: relative;
     top: 25px;
   }
-  //   .footer__contacts__link::after {
 
-  //   }
   .footer__copylink {
-    text-align: center;
+    width: 320px;
+
     color: $primary-text-color;
+    padding-bottom: 20px;
+    padding-top: 22px;
+    @media screen and (max-witdh: 480px) {
+      text-align: center;
+    }
   }
 }
 .footer__contacts__link_call {
