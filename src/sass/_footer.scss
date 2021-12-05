@@ -1,0 +1,111 @@
+.footer__container {
+  padding-bottom: 0;
+}
+.footer {
+  background-color: $advantages-bg-color;
+  width: 100%;
+  height: 100%;
+
+  &__logo {
+    @media screen and (max-width: 767px) {
+      padding-top: 17px;
+      padding-bottom: 43px;
+      color: $accent-color;
+      width: 200px;
+      height: 76px;
+
+      font-family: Titan One;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 34px;
+      line-height: 39px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+  }
+  &__social-icon {
+    fill: $social-color;
+  }
+}
+.footer__text {
+  color: $secondary-title-color;
+  @media screen and (max-witdh: 767px) {
+    //padding-left: 22px;
+    margin-top: 131px;
+    width: 232px;
+    height: 42px;
+    text-align: left;
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+  }
+}
+.footer__social {
+  display: flex;
+  margin-top: 43px;
+  fill: $social-color;
+  //align-items: block;
+  padding-left: 147px;
+  //padding-right: 20.53px;
+  &__item {
+    display: flex;
+    @media screen and (max-witdh: 767px) {
+      padding-bottom: 46px;
+      padding-left: 147px;
+    }
+    &:not(:last-child) {
+      margin-right: 28.24px;
+    }
+  }
+}
+
+.footer__contacts {
+  &__link {
+    color: #000000;
+    @media screen and (max-width: 767px) {
+      width: 230px;
+      height: 22px;
+      //   left: 70px;
+      //   top: 6962px;
+
+      font-family: 'DM Sans' sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 22px;
+
+      text-align: right;
+      width: 320px;
+      height: 0px;
+      //left: 0px;
+      //top: 7027px;
+
+      //border: 1px solid #e1e1e1;
+    }
+  }
+  .footer__contacts__link::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #e1e1e1;
+    display: block;
+    position: relative;
+    top: 25px;
+  }
+  //   .footer__contacts__link::after {
+
+  //   }
+  .footer__copylink {
+    text-align: center;
+    color: $primary-text-color;
+  }
+}
+.footer__contacts__link_call {
+  text-decoration: none;
+  color: $accent-color;
+  padding-top: 20px;
+  margin-bottom: 50px;
+}
