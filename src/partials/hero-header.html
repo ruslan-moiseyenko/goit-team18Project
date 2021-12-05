@@ -1,0 +1,112 @@
+<div class="hero-header-container">
+  <div class="container">
+    <header class="page-header">
+      <picture>
+        <source
+          srcset="./images/logo-desktop.png 1x, ./images/logo-desktop@2x.png 2x"
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="./images/logo-tablet.png 1x, ./images/logo-tablet@2x.png 2x"
+          media="(min-width: 768px)"
+        />
+        <source srcset="./images/logo.png 1x, ./images/logo@2x.png 2x" />
+        <img class="logo" src="./images/logo.png" alt="logo" />
+      </picture>
+
+      <button
+        type="button"
+        class="open-menu-button"
+        aria-controls="menu__container"
+        open-menu-button
+      >
+        <svg width="20" height="12" aria-label="Open mobile menu" class="open-menu-button__icon">
+          <use href="./images/sprite.svg#icon-burger"></use>
+        </svg>
+      </button>
+      <div class="menu__overlay" data-menu>
+        <div class="menu__container" id="menu__container">
+          <button
+            type="button"
+            class="close-menu-button"
+            aria-controls="menu__container"
+            close-menu-button
+          >
+            <svg
+              width="14"
+              height="14"
+              aria-label="Close mobile menu"
+              class="close-menu-button__icon"
+            >
+              <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <button type="button" class="buy-button buy-button__menu">
+            <span class="buy-button__text">Buy now</span>
+            <svg width="7.5" height="10" class="buy-button__icon">
+              <use href="./images/sprite.svg#icon-right-arrow"></use>
+            </svg>
+          </button>
+          <ul class="site-nav list">
+            <li class="site-nav__item">
+              <a href="#home" class="site-nav__link site-nav__link--active">Home</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="#feedbacks" class="site-nav__link">About us</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="#about" class="site-nav__link">How it’s made?</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="#products" class="site-nav__link">Our products</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="#contacts" class="site-nav__link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button type="button" class="buy-button buy-button__hero" buy-button>
+        <span class="buy-button__text">Buy now</span>
+        <svg width="7.5" height="10" class="buy-button__icon">
+          <use href="./images/sprite.svg#icon-right-arrow"></use>
+        </svg>
+      </button>
+    </header>
+    <section class="hero">
+      <div class="hero__title-container">
+        <h1 class="hero__title">ice cream<br />made with<br /><span>passion</span></h1>
+        <ul class="hero-anchor__list list">
+          <li class="hero-anchor__item hero-anchor__item--dark">
+            <a href="#products" class="hero-anchor__link hero-anchor__link--dark">Products</a>
+          </li>
+          <li class="hero-anchor__item hero-anchor__item--light">
+            <a href="#about" class="hero-anchor__link hero-anchor__link--light">How it’s made?</a>
+          </li>
+        </ul>
+      </div>
+      <ul class="statistic-info__list list">
+        <li class="statistic-info__item">
+          <span class="statistic-info__number">16</span>
+          <span class="statistic-info__text">cafes</span>
+        </li>
+        <li class="statistic-info__item">
+          <span class="statistic-info__number">23</span>
+          <span class="statistic-info__text">food trucks</span>
+        </li>
+      </ul>
+      <div class="hero-eco__container">
+        <img class="hero-eco__image" src="" alt="Bio eco" />
+        <p class="hero-eco__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et
+        </p>
+        <a href="" class="hero-eco__link">
+          <svg class="hero-eco__icon" width="20" height="20">
+            <use href=""></use>
+          </svg>
+        </a>
+      </div>
+    </section>
+  </div>
+</div>

@@ -1,0 +1,118 @@
+.gallery {
+  min-width: 320px;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-image: linear-gradient(to bottom, $advantages-bg-color 45%, $primary-white-color 45%);
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    // padding-top: 66px;
+    min-width: 768px;
+    @media screen and (min-width: 1200px) {
+      min-width: 1200px;
+    }
+  }
+}
+.gallery__container {
+  min-width: 320px;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    min-width: 768px;
+  }
+}
+
+.gallery__list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+.gallery__item {
+  margin-right: 2px;
+  margin-top: auto;
+  margin-bottom: auto;
+  &:nth-child(4) {
+    margin-top: 25px;
+  }
+  &:nth-child(5) {
+    margin-top: 10px;
+  }
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    margin-right: 4px;
+    &:nth-child(4) {
+      margin-top: 55px;
+    }
+    &:nth-child(5) {
+      margin-top: 25px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 6px;
+    margin-right: 4px;
+    &:nth-child(4) {
+      margin-top: 90px;
+    }
+    &:nth-child(5) {
+      margin-top: 35px;
+    }
+  }
+}
+
+.gallery__pic {
+  max-width: 40px;
+  max-height: 40px;
+  display: block;
+  border-radius: 10px;
+  margin-bottom: 2px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    max-width: 86px;
+    max-height: 86px;
+    margin-bottom: 4px;
+    border-radius: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 138px;
+    max-height: 138px;
+    margin-bottom: 6px;
+    border-radius: 20px;
+  }
+}
+
+.gallery__pic--big {
+  width: 78px;
+  height: 78px;
+  display: block;
+  border-radius: 10px;
+  margin-bottom: 2px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    width: 175px;
+    height: 175px;
+    margin-bottom: 4px;
+    border-radius: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 283px;
+    height: 283px;
+    margin-bottom: 6px;
+    border-radius: 20px;
+  }
+}
+
+.gallery__pic--big:hover,
+.gallery__pic:hover {
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    transform: translatey(-30px);
+  }
+  @media screen and (min-width: 1200px) {
+    transform: translatey(-40px);
+  }
+}
