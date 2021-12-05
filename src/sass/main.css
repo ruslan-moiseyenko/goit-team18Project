@@ -351,6 +351,9 @@ body.is-open {
   text-transform: uppercase;
   text-align: center;
   color: #ffa5ba;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 0;
   margin-bottom: 15px;
 }
@@ -943,10 +946,10 @@ body.is-open {
 .contacts {
   background-image: linear-gradient(to bottom, #ffffff 170px, #fff5f6 170px);
   min-width: 320px;
+  padding-top: 86px;
 }
 
 .contacts-container {
-  padding-top: 86px;
   margin: auto;
 }
 
@@ -1009,6 +1012,9 @@ body.is-open {
 }
 
 .contacts__category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 16px;
   margin-right: auto;
   margin-bottom: 25px;
@@ -1019,10 +1025,6 @@ body.is-open {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: left;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .contacts__category--foodtruck {
@@ -1036,15 +1038,24 @@ body.is-open {
 
 .contacts__category-text {
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
   font-family: DM Sans;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   text-transform: uppercase;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
+  justify-content: center;
+  justify-self: center;
+  margin: auto;
   letter-spacing: 0.04em;
 }
 
@@ -1122,6 +1133,7 @@ body.is-open {
 }
 
 .contacts__button {
+  cursor: pointer;
   display: block;
   margin: 0 auto;
   width: 161px;
@@ -1147,10 +1159,18 @@ body.is-open {
   stroke: #ffffff;
 }
 
+.contacts__button--location:hover, .contacts__button--location:focus {
+  background-color: #b81941;
+}
+
 .contacts__button--franchise {
   color: #d41443;
   background-color: #ffffff;
   fill: #d41443;
+}
+
+.contacts__button--franchise:hover, .contacts__button--franchise:focus {
+  background-color: #ecebeb;
 }
 
 .contacts__button-icon {
@@ -1253,20 +1273,23 @@ body.is-open {
   height: 100%;
 }
 
+.footer__logo {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 39px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  width: 200px;
+  height: 76px;
+  color: #d41443;
+}
+
 @media screen and (max-width: 767px) {
   .footer__logo {
     padding-top: 17px;
     padding-bottom: 43px;
-    color: #d41443;
-    width: 200px;
-    height: 76px;
-    font-family: Titan One;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 34px;
-    line-height: 39px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
   }
 }
 
@@ -1276,21 +1299,17 @@ body.is-open {
 
 .footer__text {
   color: #ffa5ba;
-}
-
-@media screen and (max-witdh: 767px) {
-  .footer__text {
-    margin-top: 131px;
-    width: 232px;
-    height: 42px;
-    text-align: left;
-    font-family: Titan One;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 21px;
-    text-transform: uppercase;
-  }
+  padding-top: 131px;
+  padding-bottom: 17px;
+  width: 232px;
+  height: 42px;
+  text-align: left;
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
 }
 
 .footer__social {
@@ -1300,6 +1319,7 @@ body.is-open {
   margin-top: 43px;
   fill: #fea5bb;
   padding-left: 147px;
+  z-index: 1;
 }
 
 .footer__social__item {
@@ -1308,10 +1328,13 @@ body.is-open {
   display: flex;
 }
 
-@media screen and (max-witdh: 767px) {
+@media screen and (max-witdh: 480px) {
   .footer__social__item {
+    position: relative;
     padding-bottom: 46px;
-    padding-left: 147px;
+    padding-left: auto;
+    display: block;
+    padding-right: 20.53px;
   }
 }
 
@@ -1323,11 +1346,12 @@ body.is-open {
   color: #000000;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 480px) {
   .footer__contacts__link {
+    padding-top: 46px;
     width: 230px;
     height: 22px;
-    font-family: 'DM Sans' sans-serif;
+    font-family: DM Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -1349,8 +1373,16 @@ body.is-open {
 }
 
 .footer__contacts .footer__copylink {
-  text-align: center;
+  width: 320px;
   color: #907e82;
+  padding-bottom: 20px;
+  padding-top: 22px;
+}
+
+@media screen and (max-witdh: 480px) {
+  .footer__contacts .footer__copylink {
+    text-align: center;
+  }
 }
 
 .footer__contacts__link_call {
@@ -1450,6 +1482,10 @@ body.is-open {
   display: block;
   border-radius: 10px;
   margin-bottom: 2px;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 767px) and (max-width: 1199px) {
@@ -1476,12 +1512,16 @@ body.is-open {
   display: block;
   border-radius: 10px;
   margin-bottom: 2px;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 767px) and (max-width: 1199px) {
   .gallery__pic--big {
-    max-width: 175px;
-    max-height: 175px;
+    width: 175px;
+    height: 175px;
     margin-bottom: 4px;
     border-radius: 15px;
   }
@@ -1493,6 +1533,22 @@ body.is-open {
     height: 283px;
     margin-bottom: 6px;
     border-radius: 20px;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .gallery__pic--big:hover,
+  .gallery__pic:hover {
+    -webkit-transform: translatey(-30px);
+            transform: translatey(-30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery__pic--big:hover,
+  .gallery__pic:hover {
+    -webkit-transform: translatey(-40px);
+            transform: translatey(-40px);
   }
 }
 
