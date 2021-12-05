@@ -1,7 +1,7 @@
 (() => {
-    const openMenuBtnRef = document.querySelector("[open-menu-button]");
-    const closeMenuBtnRef = document.querySelector("[close-menu-button]");
-    const buyButtonRef = document.querySelector("[buy-button]");
+    const openMenuBtnRef = document.querySelector("[data-open-menu-button]");
+    const closeMenuBtnRef = document.querySelector("[data-close-menu-button]");
+    const buyButtonRef = document.querySelector("[data-buy-button]");
     const mobileMenuRef = document.querySelector("[data-menu]");
 
     openMenuBtnRef.addEventListener("click", () => {
