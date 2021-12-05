@@ -225,3 +225,7 @@
     background-image: url(./../images/products-button.png);
     cursor: pointer;
 }
+.products-list__wrap{
+    @media screen and (max-width: 767px) {
+      width: 250px;
+      margin: 0 auto;}}
