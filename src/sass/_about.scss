@@ -1,3 +1,7 @@
+body.is-open {
+  overflow: hidden;
+}
+
 .about {
   background-color: $advantages-bg-color;
   padding-top: 130px;
@@ -204,11 +208,218 @@
   border-radius: 22px;
   border: none;
 
-  &:hover {
+  transition: background 250ms linear;
+
+  &:hover,
+  &:focus {
     background: #ecebeb;
   }
 }
 
+.about__button--centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .about__icon {
   margin-left: 14px;
+}
+
+/*  модалка  */
+
+.about__backdrop--visible {
+  overflow-y: scroll;
+  padding: 93px 15px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 1;
+
+  z-index: 4;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.about__backdrop--hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.about__modal {
+  .about__backdrop--visible & {
+    padding: 40px;
+    padding-top: 60px;
+    border-radius: 4px;
+
+    position: relative;
+    margin: 0 auto;
+
+    background-image: linear-gradient(to right, rgba(255, 184, 202, 0.7), rgba(255, 184, 202, 0.7)),
+      url('../images/ice-cream-main-desktop.png'),
+      linear-gradient(to right, $primary-white-color, $primary-white-color);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(255, 184, 202, 0.5),
+          rgba(255, 184, 202, 0.5)
+        ),
+        url('../images/ice-cream-main-desktop@2x.png'),
+        linear-gradient(to right, $primary-white-color, $primary-white-color);
+    }
+
+    @media screen and (max-width: 767px) {
+      max-width: 450px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      max-width: 450px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 528px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(1);
+
+      width: 528px;
+    }
+  }
+
+  .about__backdrop--hidden & {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+}
+
+.about__modal-title {
+  margin-top: 0;
+  margin-bottom: 25px;
+  align-self: center;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.15;
+  color: $primary-black-color;
+}
+
+/*кнопка закрытия*/
+
+.about__button-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  cursor: pointer;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  background-color: $product2-bg-color;
+  border-radius: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  transition: background 250ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+/*формы*/
+
+.about__form-item {
+  margin-bottom: 30px;
+}
+
+.about__form-label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  color: $primary-black-color;
+
+  transform: translate(0, -50%);
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  transition: transform 250ms linear;
+
+  .about__form-input:focus + &,
+  .about__form-input:not(:placeholder-shown) + & {
+    transform: translate(0, -35px);
+  }
+}
+
+.about__form-wrapper {
+  position: relative;
+  margin-top: 4px;
+}
+
+.about__form-input {
+  width: 100%;
+  background-color: $product2-bg-color;
+  padding: 10px 10px 10px 10px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  &:focus {
+    background-color: $advantages-bg-color;
+    outline: 0;
+    border: 1px solid $accent-color;
+    fill: $accent-color;
+  }
+}
+
+/*checkbox*/
+
+.about__checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1280px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.about__checkbox-label {
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 1279px) {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+  font-size: 14px;
+  line-height: 1.71;
+  cursor: pointer;
+  color: rgba(117, 117, 117, 1);
+}
+
+.about__checkbox-icon {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+
+  margin-right: 5px;
+  width: 15px;
+  height: 14px;
+  border: 2px solid $accent-color;
+  border-radius: 2px;
+
+  .about__checkbox-input:checked + & {
+    background-color: $accent-color;
+    border: 2px solid $accent-color;
+    background-image: url(../images/checked.svg);
+  }
 }
