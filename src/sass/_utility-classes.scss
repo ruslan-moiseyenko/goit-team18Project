@@ -1,6 +1,10 @@
 body {
   background-color: $primary-bg-color;
   color: $primary-text-color;
+
+  body.is-open {
+    overflow: hidden;
+  }
 }
 
 button {
