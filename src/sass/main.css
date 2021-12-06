@@ -1329,8 +1329,8 @@ body.is-open {
 
 @media screen and (max-width: 767px) {
   .footer__logo {
-    padding-top: 17px;
-    padding-bottom: 43px;
+    /* padding-top: 17px; */
+    margin-bottom: 43px;
   }
 }
 
@@ -1340,8 +1340,8 @@ body.is-open {
 
 .footer__text {
   color: #ffa5ba;
-  padding-top: 131px;
-  padding-bottom: 17px;
+  /* padding-top: 131px; */
+  margin-bottom: 17px;
   width: 232px;
   height: 42px;
   text-align: left;
@@ -1357,10 +1357,10 @@ body.is-open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 43px;
+  /* margin-top: 43px; */
   fill: #fea5bb;
-  padding-left: 147px;
-  z-index: 1;
+  /* padding-left: 147px; */
+  /* z-index: 1; */
 }
 
 .footer__social__item {
@@ -1371,8 +1371,8 @@ body.is-open {
 
 @media screen and (max-witdh: 480px) {
   .footer__social__item {
-    position: relative;
-    padding-bottom: 46px;
+    /* position: relative; */
+    margin-bottom: 46px;
     padding-left: auto;
     display: block;
     padding-right: 20.53px;
@@ -1389,7 +1389,7 @@ body.is-open {
 
 @media screen and (max-width: 480px) {
   .footer__contacts__link {
-    padding-top: 46px;
+    /* padding-top: 46px; */
     width: 230px;
     height: 22px;
     font-family: DM Sans;
@@ -1416,8 +1416,8 @@ body.is-open {
 .footer__contacts .footer__copylink {
   width: 320px;
   color: #907e82;
-  padding-bottom: 20px;
-  padding-top: 22px;
+  /* padding-bottom: 20px; */
+  /* padding-top: 22px; */
 }
 
 @media screen and (max-witdh: 480px) {
