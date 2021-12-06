@@ -1,8 +1,8 @@
-<div class="hero-header-container">
-  <div class="container">
-    <header class="page-header">
-      <picture>
-        <!--<source
+<div class="hero-header">
+  <header class="page-header">
+    <div class="page-header__container container">
+      <picture class="logo__container">
+        <source
           srcset="./images/logo-desktop.png 1x, ./images/logo-desktop@2x.png 2x"
           media="(min-width: 1200px)"
         />
@@ -10,9 +10,29 @@
           srcset="./images/logo-tablet.png 1x, ./images/logo-tablet@2x.png 2x"
           media="(min-width: 768px)"
         />
-        <source srcset="./images/logo.png 1x, ./images/logo@2x.png 2x" /> -->
+        <source srcset="./images/logo.png 1x, ./images/logo@2x.png 2x" />
         <img class="logo" src="./images/logo.png" alt="logo" />
       </picture>
+
+      <nav class="main-nav">
+        <ul class="main-nav__list list">
+          <li class="main-nav__item">
+            <a href="#home" class="main-nav__link main-nav__link--active">Home</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#feedbacks" class="main-nav__link">About us</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#about" class="main-nav__link">How it’s made?</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#products" class="main-nav__link">Our products</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#contacts" class="main-nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
 
       <button
         type="button"
@@ -24,56 +44,58 @@
           <use href="./images/sprite.svg#icon-burger"></use>
         </svg>
       </button>
-      <div class="menu__overlay" data-menu>
-        <div class="menu__container" id="menu__container">
-          <button
-            type="button"
-            class="close-menu-button"
-            aria-controls="menu__container"
-            data-close-menu-button
-          >
-            <svg
-              width="14"
-              height="14"
-              aria-label="Close mobile menu"
-              class="close-menu-button__icon"
-            >
-              <use href="./images/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-          <button type="button" class="buy-button buy-button__menu">
-            <span class="buy-button__text">Buy now</span>
-            <svg width="7.5" height="10" class="buy-button__icon">
-              <use href="./images/sprite.svg#icon-right-arrow"></use>
-            </svg>
-          </button>
-          <ul class="site-nav list">
-            <li class="site-nav__item">
-              <a href="#home" class="site-nav__link site-nav__link--active">Home</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="#feedbacks" class="site-nav__link">About us</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="#about" class="site-nav__link">How it’s made?</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="#products" class="site-nav__link">Our products</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="#contacts" class="site-nav__link">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <button type="button" class="buy-button buy-button__hero" data-buy-button>
+
+      <button type="button" class="buy-button buy-button__header" data-buy-button>
         <span class="buy-button__text">Buy now</span>
         <svg width="7.5" height="10" class="buy-button__icon">
           <use href="./images/sprite.svg#icon-right-arrow"></use>
         </svg>
       </button>
-    </header>
-    <section class="hero">
+    </div>
+  </header>
+
+  <div class="menu__overlay" data-menu>
+    <div class="menu__container" id="menu__container">
+      <button
+        type="button"
+        class="close-menu-button"
+        aria-controls="menu__container"
+        data-close-menu-button
+      >
+        <svg width="14" height="14" aria-label="Close mobile menu" class="close-menu-button__icon">
+          <use href="./images/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+      <button type="button" class="buy-button buy-button__menu">
+        <span class="buy-button__text">Buy now</span>
+        <svg width="7.5" height="10" class="buy-button__icon">
+          <use href="./images/sprite.svg#icon-right-arrow"></use>
+        </svg>
+      </button>
+      <nav class="mobile-nav">
+        <ul class="mobile-nav__list list">
+          <li class="mobile-nav__item">
+            <a href="#home" class="mobile-nav__link mobile-nav__link--active">Home</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="#feedbacks" class="mobile-nav__link">About us</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="#about" class="mobile-nav__link">How it’s made?</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="#products" class="mobile-nav__link">Our products</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="#contacts" class="mobile-nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <section class="hero">
+    <div class="container">
       <div class="hero__title-container">
         <h1 class="hero__title">ice cream<br />made with<br /><span>passion</span></h1>
         <ul class="hero-anchor__list list">
@@ -96,22 +118,48 @@
         </li>
       </ul>
       <div class="hero-eco__container">
-        <!--<img class="hero-eco__image" src="" alt="Bio eco" />-->
+        <picture>
+          <source
+            srcset="./images/eco-desktop.png 1x, ./images/eco-desktop@2x.png 2x"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="./images/eco-tablet.png 1x, ./images/eco-tablet@2x.png 2x"
+            media="(min-width: 768px)"
+          />
+          <img class="hero-eco__image" src="./images/eco-tablet.png" alt="Bio-eco" />
+        </picture>
         <p class="hero-eco__text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et
         </p>
         <a href="" class="hero-eco__link">
-          <svg class="hero-eco__icon" width="20" height="20">
-            <use href=""></use>
-          </svg>
+          <img
+            class="hero-eco__icon"
+            src="./images/arrow-right-button.png"
+            alt="ice-cream"
+            width="20"
+            height="20"
+          />
         </a>
       </div>
       <div class="main-icecream__container">
         <picture>
+          <source
+            srcset="
+              ./images/ice-cream-main-desktop.png    1x,
+              ./images/ice-cream-main-desktop@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="./images/ice-cream-main-tablet.png 1x, ./images/ice-cream-main-tablet@2x.png 2x"
+            media="(min-width: 768px)"
+          />
+          <source srcset="./images/ice-cream-main.png 1x, ./images/ice-cream-main@2x.png 2x" />
           <img class="main-icecream__image" src="./images/ice-cream-main.png" alt="ice-cream" />
         </picture>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 </div>
