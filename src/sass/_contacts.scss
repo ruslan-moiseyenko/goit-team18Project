@@ -16,7 +16,7 @@
     );
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1280px) {
     padding-top: 132px;
     background-image: linear-gradient(
       to bottom,
@@ -27,8 +27,21 @@
 }
 
 .contacts-container {
-  margin: auto;
-  padding: 0 50px;
+  @media screen and (max-width: 767px) {
+    margin: auto;
+    padding: 0 50px;
+  }
+
+  @media screen and (mix-width: 1280px) {
+    background-image: url('../images/contacts_bg.png');
+    background-repeat: no-repeat;
+    background-position-y: 102%;
+    background-position-x: center;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/contacts_bg@2x.png');
+    }
+  }
 }
 
 .contacts__box {
@@ -39,7 +52,7 @@
     width: 157px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     width: 243px;
   }
 }
@@ -54,7 +67,7 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 81px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-bottom: 86px;
   }
 }
@@ -75,8 +88,8 @@
     flex-basis: calc((100%-112px) / 3);
   }
 
-  @media screen and (min-width: 1200px) {
-    flex-basis: calc((100%-112px) / 3);
+  @media screen and (min-width: 1280px) {
+    flex-basis: calc((100%-290px) / 3);
   }
 }
 
@@ -101,7 +114,7 @@
     background-color: $product3-bg-color;
     width: 130px;
 
-    @media screen and(min-width:1200px) {
+    @media screen and(min-width:1280px) {
       width: 138px;
     }
   }
@@ -160,7 +173,7 @@
     line-height: 1.85;
     margin-bottom: 14px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 16px;
     line-height: 1.875;
     margin-bottom: 10px;
@@ -181,7 +194,7 @@
     font-size: 14px;
     line-height: 1.64;
   }
-  @media screen and(min-width:1200px) {
+  @media screen and(min-width:1280px) {
     font-size: 16px;
     line-height: 1.82;
   }
@@ -194,7 +207,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.83;
+  line-height: 22px;
   letter-spacing: 0.04em;
   text-align: left;
 
@@ -205,7 +218,7 @@
     line-height: 1.86;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 16px;
     line-height: 1.87;
   }
@@ -217,7 +230,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  line-height: 186%;
+  line-height: 22px;
   text-align: left;
 
   color: $secondary-title-color;
@@ -227,7 +240,7 @@
     line-height: 1.86;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 16px;
     line-height: 1.87;
   }
@@ -240,7 +253,7 @@
     margin-bottom: 16px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-bottom: 15px;
   }
 }
@@ -258,7 +271,7 @@
     line-height: 1.85;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 16px;
     line-height: 1.83;
   }
@@ -271,7 +284,7 @@
     margin-bottom: 60px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-bottom: 64px;
   }
 
@@ -289,7 +302,7 @@
       top: 30px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       top: 32px;
     }
   }
@@ -316,7 +329,7 @@
     width: 191px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     width: 198px;
   }
 }
@@ -364,7 +377,7 @@
     width: 220px;
     padding: 50px 32px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     width: 330px;
     padding: 51px 43px 62px 43px;
   }
