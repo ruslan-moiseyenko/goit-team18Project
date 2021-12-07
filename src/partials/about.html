@@ -1,6 +1,8 @@
 <section class="about" id="about">
-    <div class="about__container">
+
+        <div class="about__container">
         <p class="about__label">tradition and love</p>
+
         <h2 class="about__title">how it’s made?</h2>
 
         <div class="about__wrapper">
@@ -25,7 +27,7 @@
                     <span class="about__text--end">Aliquam erat volutpat. Aenean accumsan.</span>
                 </p>
 
-                <button class="about__button">
+                <button class="about__button" data-modal-open>
                     Read more
                     <svg class="about__icon" width="9px" height="16px">
                         <use href="./images/sprite.svg#icon-right-arrow"></use>
@@ -37,4 +39,71 @@
         </div>
     </div>
 
+    <!--                                    модалка                                                                                -->
+
+    <div class="about__backdrop--visible about__backdrop--hidden" data-modal>
+
+        <div class="about__modal">
+            <button class="about__button-close" type="button" data-modal-close>
+                <svg class="about__close-icon" width="18" height="18">
+                    <use href="./images/sprite.svg#icon-close"></use>
+                </svg>
+            </button>
+
+            <p class="about__text">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus,
+                faucibus lorem eget, egestas eros.
+                Maecenas eleifend erat at justo fringilla.</p>
+            <p class="about__text about__text--grey">Curabitur lacinia enim at ex blandit, vel pellentesque odio
+                elementum. Mauris rhoncus orci in imperdiet placerat.
+                Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+                tincidunt.
+                <span class="about__text--end">Aliquam erat volutpat. Aenean accumsan.</span>
+            </p>
+
+            <p class="about__modal-title">Оставьте свои данные, мы вам перезвоним</p>
+
+            <form class="about__form-recall">
+                <ul class="about__form-list list">
+                    <li class="about__form-item">
+
+                        <div class="about__form-wrapper">
+                            <input type="text" class="about__form-input" name="name" id="name" placeholder=" ">
+                            <label for="name" class="about__form-label">Имя</label>
+                        </div>
+                    </li>
+
+                    <li class="about__form-item">
+
+                        <div class="about__form-wrapper">
+                            <input type="tel" class="about__form-input" name="tel" id="tel" placeholder=" ">
+                            <label for="tel" class="about__form-label">Телефон</label>
+                        </div>
+                    </li>
+
+                    <li class="about__form-item">
+
+                        <div class="about__form-wrapper">
+                            <input type="email" class="about__form-input" name="mail" id="mail" placeholder=" ">
+                            <label for="mail" class="about__form-label">Почта</label>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <div class="about__checkbox">
+                    <label for="check" class="about__checkbox-label">
+                        <input type="checkbox" class="about__checkbox-input visually-hidden" name="checkbox"
+                            value="confirm" id="check">
+                        <span class="about__checkbox-icon"></span>
+                        Соглашаюсь с рассылкой
+                    </label>
+
+                </div>
+
+                <button type="submit" class="about__button about__button--centered">Отправить</button>
+
+            </form>
+
+        </div>
+    </div>
 </section>
