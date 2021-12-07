@@ -815,13 +815,13 @@ body.is-open {
   .advantages {
     padding-top: 66px;
     min-width: 768px;
-    padding-bottom: 140px;
+    padding-bottom: 115px;
   }
 }
 
 @media screen and (min-width: 767px) {
   .advantages {
-    padding-bottom: 140px;
+    padding-bottom: 115px;
   }
 }
 
@@ -877,6 +877,7 @@ body.is-open {
 @media screen and (min-width: 767px) and (max-width: 1199px) {
   .advantages__list {
     width: 768px;
+    height: 220px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -912,7 +913,7 @@ body.is-open {
 @media screen and (min-width: 767px) and (max-width: 1199px) {
   .advantages__box {
     width: 180px;
-    height: 226px;
+    height: 222px;
     margin-right: 60px;
   }
   .advantages__box:last-child {
