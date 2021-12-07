@@ -363,13 +363,17 @@ $transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       height: 86%;
       width: 100%;
       background-color: $header-bg-color;
-      border-left: 4px solid $accent-color;
+      border-left: 3px solid $accent-color;
       left: 0;
       animation-name: typing;
       animation-duration: 5s;
       animation-timing-function: steps(7);
       animation-fill-mode: both;
       animation-delay: 200ms;
+
+      @media screen and (min-width: 1280px) {
+        border-left: 4px solid $accent-color;
+      }
 
       @keyframes typing {
         35%,
