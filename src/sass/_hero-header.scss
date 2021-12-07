@@ -6,6 +6,10 @@ p {
   margin-bottom: 0;
 }
 
+button {
+  padding: 0;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -18,28 +22,47 @@ img {
   color: $primary-white-color;
 }
 
+%buy-button {
+  display: flex;
+  border: none;
+  width: 100%;
+  height: 44px;
+  padding: 0;
+
+  align-items: center;
+  justify-content: center;
+
+  background: $primary-white-color;
+  border-radius: 22px;
+}
+
 .hero-header {
-  background-color: $header-bg-color;
   position: relative;
   overflow: hidden;
   min-width: 320px;
   height: 502px;
 
+  background-color: $header-bg-color;
+
   @media screen and (min-width: 768px) {
     height: 400px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     height: 665px;
   }
+}
+
+.page-header {
+  padding: 0;
 }
 
 .page-header__container {
   display: flex;
   align-items: center;
-  padding-top: 6px;
   position: relative;
   z-index: 10;
+  padding-top: 6px;
 
   @media screen and (min-width: 768px) {
     padding-top: 37px;
@@ -47,7 +70,7 @@ img {
 }
 
 .logo__container {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     transform: translateX(-69px);
   }
 }
@@ -55,7 +78,7 @@ img {
 .main-nav__list {
   display: none;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     display: flex;
     margin-left: 45px;
   }
@@ -85,30 +108,26 @@ img {
   }
 }
 
-.buy-button {
-  display: flex;
-  border: none;
-  width: 100%;
-  height: 44px;
-  padding: 0;
-
-  align-items: center;
-  justify-content: center;
-
-  background: $primary-white-color;
-  border-radius: 22px;
-}
-
 .buy-button__text {
   margin-right: 28px;
 
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.31;
   color: $accent-color;
+
+  .buy-button__header & {
+    margin-right: 13px;
+  }
+
+  .buy-button__menu & {
+    @media screen and (min-width: 768px) {
+      margin-right: 21px;
+    }
+  }
 }
 
 .buy-button__header {
+  @extend %buy-button;
   display: none;
 
   @media screen and (min-width: 768px) {
@@ -123,10 +142,15 @@ img {
 }
 
 .buy-button__menu {
+  @extend %buy-button;
   margin-bottom: 19px;
   margin-right: auto;
   margin-left: auto;
   width: 209px;
+
+  @media screen and (min-width: 768px) {
+    width: 186px;
+  }
 }
 
 .open-menu-button,
@@ -136,7 +160,7 @@ img {
 }
 
 .open-menu-button {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     display: none;
   }
 }
@@ -167,7 +191,7 @@ img {
     display: block;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     display: none;
   }
 }
@@ -179,6 +203,10 @@ img {
   background-color: $menu-bg-color;
   text-align: left;
   padding-top: 23px;
+
+  @media screen and (min-width: 768px) {
+    display: 254px;
+  }
 }
 
 .mobile-nav__item {
@@ -198,6 +226,11 @@ img {
 
   padding-left: 21px;
   padding-right: 21px;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
 
 .main-nav__link--active,
@@ -207,13 +240,27 @@ img {
 
 .hero {
   padding-top: 137px;
+  padding-bottom: 160px;
 
   @media screen and (min-width: 768px) {
     padding-top: 15px;
+    padding-bottom: 34px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     padding-top: 84px;
+    padding-bottom: 56px;
+  }
+}
+
+.hero-info__container {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 66px;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 112px;
   }
 }
 
@@ -240,7 +287,7 @@ img {
     margin-bottom: 20px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 38px;
     line-height: 1.16;
     margin-bottom: 25px;
@@ -256,7 +303,7 @@ img {
       line-height: 0.91;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       font-size: 58px;
       line-height: 0.9;
     }
@@ -283,7 +330,7 @@ img {
     background-color: $accent-color;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     height: 40px;
 
     &:not(:last-child) {
@@ -313,7 +360,7 @@ img {
     color: $primary-white-color;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 14px;
     line-height: 1.29;
 
@@ -325,14 +372,131 @@ img {
 .statistic-info__list {
   display: none;
 
+  @media screen and (max-width: 1279px) {
+    margin-right: 10px;
+  }
+
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
   }
 }
 
+.statistic-info__item {
+  text-align: right;
+
+  &:not(:last-child) {
+    margin-bottom: 14px;
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 18px;
+    }
+  }
+}
+
+.statistic-info__number {
+  display: block;
+  position: relative;
+  z-index: 0;
+
+  font-family: Titan One;
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+
+  color: $accent-color;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 46px;
+    line-height: 1.15;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: -10px;
+    z-index: -1;
+
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+
+    background-color: $primary-white-color;
+
+    @media screen and (min-width: 1280px) {
+      top: -4px;
+      right: -18px;
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+.statistic-info__text {
+  display: block;
+  font-size: 8px;
+  line-height: 1.25;
+  color: $primary-white-color;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+}
+
 .hero-eco__container {
   display: none;
+  position: relative;
+  padding-left: 120px;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-left: 180px;
+  }
+}
+
+.hero-eco__image {
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+
+  @media screen and (min-width: 1280px) {
+    left: -38px;
+    bottom: -7px;
+  }
+}
+
+.hero-eco__text {
+  width: 114px;
+  margin-bottom: 7px;
+
+  font-size: 8px;
+  line-height: 1.5;
+  text-align: left;
+
+  color: $primary-white-color;
+
+  @media screen and (min-width: 1280px) {
+    width: 200px;
+    margin-bottom: 20px;
+
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+
+.hero-eco__icon {
+  width: 18px;
+  height: 18px;
+
+  @media screen and (min-width: 1280px) {
+    width: 26px;
+    height: 26px;
+  }
 }
 
 .main-icecream__container {
@@ -345,7 +509,7 @@ img {
     margin-left: 344px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-left: 479px;
   }
 
@@ -368,11 +532,21 @@ img {
       left: -71px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       width: 538px;
       height: 538px;
       top: -56px;
       left: -119px;
     }
+  }
+}
+
+.hero-tasty__container {
+  position: absolute;
+  bottom: 0;
+  margin-left: 532px;
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 763px;
   }
 }
