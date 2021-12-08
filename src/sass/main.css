@@ -815,11 +815,11 @@ body.is-open {
   .advantages {
     padding-top: 66px;
     min-width: 768px;
-    padding-bottom: 115px;
+    padding-bottom: 140px;
   }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 1200px) {
   .advantages {
     padding-bottom: 115px;
   }
@@ -828,13 +828,24 @@ body.is-open {
 .advantages__container {
   padding-left: 20px;
   padding-right: 20px;
+  margin: 0 auto;
   min-width: 320px;
   max-width: 480px;
 }
 
 @media screen and (min-width: 767px) and (max-width: 1199px) {
   .advantages__container {
-    width: 768px;
+    min-width: 768px;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages__container {
+    min-width: 1200px;
+    padding-left: 80px;
+    padding-right: 80px;
   }
 }
 
@@ -853,6 +864,7 @@ body.is-open {
 @media screen and (min-width: 767px) and (max-width: 1199px) {
   .advantages__title {
     font-size: 48px;
+    margin-top: 36px;
     margin-bottom: 13px;
   }
 }
@@ -868,8 +880,6 @@ body.is-open {
   width: 320px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -883,49 +893,50 @@ body.is-open {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding-left: 34px;
-    padding-right: 34px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .advantages__list {
-    width: 1200px;
+    min-width: 1050px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding-left: 0px;
+    margin: 0px;
   }
 }
 
-.advantages__box {
+.advantages__item {
   width: 230px;
   height: 156px;
   margin-bottom: 38px;
 }
 
-.advantages__box:last-child {
+.advantages__item:last-child {
   margin-bottom: 0px;
 }
 
 @media screen and (min-width: 767px) and (max-width: 1199px) {
-  .advantages__box {
+  .advantages__item {
     width: 180px;
     height: 222px;
     margin-right: 60px;
   }
-  .advantages__box:last-child {
+  .advantages__item:last-child {
     margin-right: 0px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .advantages__box {
+  .advantages__item {
     width: 330px;
     height: 222px;
     margin-bottom: 0px;
+    margin-right: 30px;
   }
 }
 
