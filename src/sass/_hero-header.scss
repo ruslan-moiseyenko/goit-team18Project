@@ -246,9 +246,11 @@ $transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu__container {
-  margin-left: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
   width: 250px;
-  height: 100vh;
+  height: 100%;
   background-color: $menu-bg-color;
   text-align: left;
   padding-top: 23px;
@@ -260,6 +262,10 @@ $transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   .menu__overlay.is-open & {
     transform: translateX(0);
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
   }
 }
 
