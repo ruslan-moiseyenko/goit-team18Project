@@ -133,9 +133,13 @@
 
 .footer__social__icon {
   fill: $social-color;
+  &:focus,
+  &:hover {
+    fill: $accent-color;
+  }
 }
 
-.footer__contacts {
+.footer__contacts-link {
   margin-left: auto;
 
   @media screen and (max-width: 767px) {
@@ -145,8 +149,6 @@
   @media screen and (max-width: 1199px) {
     width: 268px;
   }
-}
-.footer__contacts-link {
   color: #000000;
   font-family: inherit;
   font-weight: 700;
@@ -169,7 +171,6 @@
 .footer__link-call {
   text-decoration: none;
   color: $accent-color;
-  padding-top: 20px;
   margin-bottom: 50px;
 }
 
