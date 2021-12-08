@@ -1,11 +1,7 @@
 .gallery {
   min-width: 320px;
-
-  // padding-top: 20px;
-  // padding-bottom: 20px;
   background-image: linear-gradient(to bottom, $advantages-bg-color 45%, $primary-white-color 45%);
   @media screen and (min-width: 767px) and (max-width: 1199px) {
-    // padding-top: 66px;
     min-width: 768px;
     @media screen and (min-width: 1200px) {
       min-width: 1200px;
@@ -14,9 +10,6 @@
 }
 .gallery__container {
   min-width: 320px;
-
-  // padding-left: 20px;
-  // padding-right: 20px;
   @media screen and (min-width: 767px) and (max-width: 1199px) {
     min-width: 768px;
   }
@@ -26,8 +19,6 @@
   list-style: none;
   display: flex;
   justify-content: center;
-  // margin-left: auto;
-  // margin-right: auto;
   margin: 0 auto;
   padding: 0;
 }

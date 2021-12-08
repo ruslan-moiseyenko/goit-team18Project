@@ -50,6 +50,23 @@
   width: 220px;
 
   background-color: $primary-white-color;
+  // box-shadow: 0 0 0 0 transparent;
+
+  @media screen and (min-width: 768px) {
+    width: 157px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 243px;
+  }
+}
+
+.contacts__box1 {
+  margin: 0 auto;
+
+  width: 220px;
+
+  background-color: $primary-white-color;
 
   @media screen and (min-width: 768px) {
     width: 157px;
