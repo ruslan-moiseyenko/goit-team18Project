@@ -80,6 +80,7 @@ body.is-open {
 
 .about__title {
   margin: 0;
+  margin-bottom: 46px;
   font-family: Titan One;
   font-size: 48px;
   line-height: 1.15;
@@ -88,12 +89,14 @@ body.is-open {
   @media screen and (max-width: 767px) {
     width: 200px;
     font-size: 34px;
+    margin-bottom: 50px;
   }
 
   @media screen and (min-width: 1280px) {
     font-size: 58px;
     line-height: 1.14;
     letter-spacing: 0.06em;
+    margin-bottom: 55px;
   }
 
   text-align: center;
@@ -107,16 +110,9 @@ body.is-open {
 }
 
 .about__wrapper {
-  margin-top: 46px;
-
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: flex-start;
-    margin-top: 50px;
-  }
-
-  @media screen and (min-width: 768px) {
-    margin-top: 55px;
   }
 }
 
