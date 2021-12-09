@@ -96,11 +96,11 @@
     align-content: space-between;
 
     margin-bottom: 0px;
-    flex-basis: calc((100%-112px) / 3);
+    flex-basis: calc(100% / 3 - 20px);
   }
 
   @media screen and (min-width: 1280px) {
-    flex-basis: calc((100%-290px) / 3);
+    flex-basis: calc(100% / 3 - 30px);
   }
 }
 
