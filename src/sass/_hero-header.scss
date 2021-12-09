@@ -27,6 +27,10 @@ $transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: color;
   transition-duration: $transition-duration;
   transition-timing-function: $transition-timing-function;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
 
   &:hover,
   &:focus {
@@ -98,16 +102,22 @@ $transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
+.main-nav {
+  height: 44px;
+}
+
 .main-nav__list {
   display: none;
 
   @media screen and (min-width: 1280px) {
+    height: 100%;
     display: flex;
-    padding-left: 240px;
+    margin-left: 240px;
   }
 }
 
 .main-nav__item {
+  height: 100%;
   &:not(:last-child) {
     margin-right: 35px;
   }
@@ -115,7 +125,6 @@ $transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 .main-nav__link {
   @extend %nav-link;
-  display: block;
   font-size: 16px;
   line-height: 1.31;
 }
@@ -124,7 +133,7 @@ $transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   width: 20px;
   margin-left: auto;
 
-  &.is-open {
+  &.is-open & {
     display: none;
   }
 
@@ -237,20 +246,26 @@ $transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu__container {
-  margin-left: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
   width: 250px;
-  height: 100vh;
+  height: 100%;
   background-color: $menu-bg-color;
   text-align: left;
   padding-top: 23px;
 
   transform: translateX(100%);
   transition-property: transform;
-  transition-duration: 1000ms;
+  transition-duration: 800ms;
   transition-timing-function: $transition-timing-function;
 
   .menu__overlay.is-open & {
     transform: translateX(0);
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
   }
 }
 
@@ -266,8 +281,6 @@ $transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
 
   padding-left: 21px;
   padding-right: 21px;
@@ -391,6 +404,7 @@ $transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 .hero-anchor__item {
   height: 24px;
+  border-radius: 20px;
 
   transition-property: background-color;
   transition-duration: $transition-duration;

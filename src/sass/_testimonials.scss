@@ -19,6 +19,10 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 19px;
   }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 15px;
+  }
 }
 
 .testimonials__text-wrapper {
@@ -26,9 +30,16 @@
   width: 100%;
   padding: 43px 50px 0 50px;
   margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media screen and (min-width: 768px) {
+    width: 620px;
     margin-bottom: 42px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 926px;
+    margin-bottom: 34px;
   }
 }
 
@@ -50,10 +61,16 @@
   @media screen and (min-width: 768px) {
     width: 524px;
   }
+  @media screen and (min-width: 1280px) {
+    width: 813px;
+  }
 }
 .testimonials__text {
   position: relative;
   z-index: 3;
+
+  margin-left: auto;
+  margin-right: auto;
 
   color: $primary-black-color;
   font-weight: 500;
@@ -67,6 +84,14 @@
 
     font-size: 14px;
     line-height: 216%;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 750px;
+    padding-left: 35px;
+    padding-right: 35px;
+
+    font-size: 16px;
+    line-height: 186%;
   }
 
   &:before {
@@ -84,6 +109,10 @@
       top: -17px;
       left: -5px;
     }
+    @media screen and (min-width: 1280px) {
+      top: -14px;
+      left: -9px;
+    }
   }
 
   &:after {
@@ -98,6 +127,9 @@
 
     @media screen and (min-width: 768px) {
       bottom: -28px;
+    }
+    @media screen and (min-width: 768px) {
+      bottom: -17px;
     }
   }
 }
