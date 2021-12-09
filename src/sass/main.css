@@ -1388,8 +1388,7 @@ body.is-open {
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
-  min-width: 320px;
-  max-width: 480px;
+  width: 320px;
 }
 
 @media screen and (min-width: 767px) and (max-width: 1199px) {
@@ -1436,7 +1435,7 @@ body.is-open {
   list-style: none;
   width: 230px;
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
 }
 
 @media screen and (min-width: 767px) and (max-width: 1199px) {
@@ -1448,7 +1447,6 @@ body.is-open {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: 0 auto;
   }
 }
 

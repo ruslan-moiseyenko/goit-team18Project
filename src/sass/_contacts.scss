@@ -18,11 +18,33 @@
 
   @media screen and (min-width: 1280px) {
     padding-top: 132px;
-    background-image: linear-gradient(
-      to bottom,
-      $primary-white-color 234px,
-      $advantages-bg-color 234px
-    );
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+
+    background-image: url('../images/contacts_bg.png'),
+      linear-gradient(to bottom, $primary-white-color 234px, $advantages-bg-color 234px);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/contacts_bg@2x.png'),
+        linear-gradient(to bottom, $primary-white-color 234px, $advantages-bg-color 234px);
+
+      background-repeat: no-repeat;
+      background-position-x: center;
+      background-position-y: center;
+    }
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/contacts_bg@2x.png'),
+      linear-gradient(to bottom, $primary-white-color 234px, $advantages-bg-color 234px);
+
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
   }
 }
 
@@ -30,17 +52,6 @@
   @media screen and (max-width: 767px) {
     margin: auto;
     padding: 0 50px;
-  }
-
-  @media screen and (mix-width: 1280px) {
-    background-image: url('../images/contacts_bg.png');
-    background-repeat: no-repeat;
-    background-position-y: 102%;
-    background-position-x: center;
-
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../images/contacts_bg@2x.png');
-    }
   }
 }
 
