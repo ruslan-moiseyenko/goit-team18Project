@@ -5,10 +5,20 @@
   @media screen and (min-width: 767px) and (max-width: 1199px) {
     min-width: 768px;
     padding-top: 140px;
+    background-image: linear-gradient(
+      to bottom,
+      $advantages-bg-color 65%,
+      $primary-white-color 65%
+    );
   }
   @media screen and (min-width: 1200px) {
     min-width: 1200px;
     padding-top: 115px;
+    background-image: linear-gradient(
+      to bottom,
+      $advantages-bg-color 55%,
+      $primary-white-color 55%
+    );
   }
 }
 .gallery__container {

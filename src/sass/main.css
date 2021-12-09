@@ -2462,6 +2462,8 @@ body.is-open {
   .gallery {
     min-width: 768px;
     padding-top: 140px;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(65%, #fff5f6), color-stop(65%, #ffffff));
+    background-image: linear-gradient(to bottom, #fff5f6 65%, #ffffff 65%);
   }
 }
 
@@ -2469,6 +2471,8 @@ body.is-open {
   .gallery {
     min-width: 1200px;
     padding-top: 115px;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(55%, #fff5f6), color-stop(55%, #ffffff));
+    background-image: linear-gradient(to bottom, #fff5f6 55%, #ffffff 55%);
   }
 }
 
