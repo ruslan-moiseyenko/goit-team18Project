@@ -74,11 +74,12 @@
 .contacts__list {
   display: flex;
   flex-wrap: wrap;
+  align-content: space-between;
 
   margin-bottom: 54px;
-  align-items: center;
   justify-content: center;
   @media screen and (min-width: 768px) {
+    margin: -54px;
     margin-bottom: 81px;
   }
   @media screen and (min-width: 1280px) {
@@ -99,11 +100,11 @@
     align-content: space-between;
 
     margin-bottom: 0px;
-    flex-basis: calc((100%-112px) / 3);
+    flex-basis: calc(100% / 3 - 20px);
   }
 
   @media screen and (min-width: 1280px) {
-    flex-basis: calc((100%-290px) / 3);
+    flex-basis: calc((100% - 90px) / 3);
   }
 }
 
