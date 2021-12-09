@@ -14,7 +14,7 @@
   padding-right: 20px;
   margin: 0 auto;
   width: 320px;
-  // max-width: 480px;
+
   @media screen and (min-width: 767px) and (max-width: 1199px) {
     min-width: 768px;
     padding-left: 34px;
@@ -126,9 +126,6 @@
   background-position: center;
 
   background-image: url(../images/icon1.png);
-  // @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  //   background-image: url(../images/icon1@2x.png);
-  // }
 }
 
 .second::before {
@@ -141,9 +138,6 @@
   background-position: center;
 
   background-image: url(../images/icon2.png);
-  // @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  //   background-image: url(../images/icon2@2x.png);
-  // }
 }
 
 .third::before {
@@ -156,7 +150,4 @@
   background-position: center;
 
   background-image: url(../images/icon3.png);
-  // @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  //   background-image: url(../images/icon3@2x.png);
-  // }
 }
