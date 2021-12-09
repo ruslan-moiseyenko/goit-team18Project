@@ -2453,8 +2453,8 @@ body.is-open {
 
 .gallery {
   min-width: 320px;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(45%, #fff5f6), color-stop(45%, #ffffff));
-  background-image: linear-gradient(to bottom, #fff5f6 45%, #ffffff 45%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(70%, #fff5f6), color-stop(70%, #ffffff));
+  background-image: linear-gradient(to bottom, #fff5f6 70%, #ffffff 70%);
   padding-top: 97px;
 }
 
