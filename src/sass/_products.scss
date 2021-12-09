@@ -105,6 +105,8 @@
         height: 525px;
         flex-basis: calc((100% - 90px) / 3);
     }
+   &:last-child {margin-bottom: 0px}
+    
 }
 
 .products-list__item::before {
