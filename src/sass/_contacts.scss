@@ -34,18 +34,6 @@
       background-position-y: center;
     }
   }
-
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url('../images/contacts_bg@2x.png'),
-      linear-gradient(to bottom, $primary-white-color 234px, $advantages-bg-color 234px);
-
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: center;
-  }
 }
 
 .contacts-container {
@@ -56,23 +44,6 @@
 }
 
 .contacts__box {
-  margin: 0 auto;
-
-  width: 220px;
-
-  background-color: $primary-white-color;
-  // box-shadow: 0 0 0 0 transparent;
-
-  @media screen and (min-width: 768px) {
-    width: 157px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    width: 243px;
-  }
-}
-
-.contacts__box1 {
   margin: 0 auto;
 
   width: 220px;
@@ -93,12 +64,13 @@
   flex-wrap: wrap;
 
   margin-bottom: 54px;
-  align-items: center;
   justify-content: center;
   @media screen and (min-width: 768px) {
+    margin: 0 -40px;
     margin-bottom: 81px;
   }
   @media screen and (min-width: 1280px) {
+    margin: 0 -60px;
     margin-bottom: 86px;
   }
 }
@@ -115,12 +87,13 @@
   @media screen and (min-width: 768px) {
     align-content: space-between;
 
-    margin-bottom: 0px;
-    flex-basis: calc((100%-112px) / 3);
+    margin-bottom: -23px;
+    flex-basis: calc(100% / 3 - 20px);
   }
 
   @media screen and (min-width: 1280px) {
-    flex-basis: calc((100%-290px) / 3);
+    flex-basis: calc(100% / 3 - 30px);
+    align-content: space-between;
   }
 }
 
