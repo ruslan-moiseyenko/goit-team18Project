@@ -328,6 +328,7 @@
   line-height: 1.31;
   align-items: center;
   text-align: center;
+  transition: background 0.25s linear;
 
   @media screen and (min-width: 768px) {
     width: 191px;
